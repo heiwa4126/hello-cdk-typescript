@@ -1,14 +1,23 @@
-# Welcome to your CDK TypeScript project
+# hello-cdk-typescript
 
-This is a blank project for CDK development with TypeScript.
+[Run Bun Run! Building an AWS CDK Template with Bun - DEV Community](https://dev.to/jolodev/run-bun-run-building-an-aws-cdk-template-with-bun-4nak)
+を参考にして、
+Bun にした
+[AWS CDK v2 チュートリアル](https://docs.aws.amazon.com/ja_jp/cdk/v2/guide/hello_world.html) TypeScript 版。
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## 手順
 
-## Useful commands
+```sh
+bun i
+bunx cdk list
+bunx cdk deploy
+bunx cdk diff
+bunx cdk destroy
+```
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+`cdk build` 相当が不要。
+
+## TODO
+
+- jest を vitest にする。
+- Terraform の output サブコマンド相当のが欲しい。 [Command: output | Terraform | HashiCorp Developer](https://developer.hashicorp.com/terraform/cli/commands/output)
