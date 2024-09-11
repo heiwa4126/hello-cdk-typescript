@@ -19,5 +19,8 @@ bunx cdk destroy
 
 ## TODO
 
+- ✅lambda を外出しにする
+- ✅LogGroup をスタックに追加する
+- いま mjs で書いてる lambda を ts にして、パッケージ依存もやる前処理を書く
 - jest を vitest にする。
 - Terraform の output サブコマンド相当のが欲しい。 [Command: output | Terraform | HashiCorp Developer](https://developer.hashicorp.com/terraform/cli/commands/output)
