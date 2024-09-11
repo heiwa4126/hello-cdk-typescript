@@ -22,6 +22,7 @@ export class HelloCdkTypescriptStack extends cdk.Stack {
 		//   `),
 		// });
 
+		// インラインをやめて、ファイルから読み込むように変更した
 		const myFunction = new lambda.Function(this, "HelloWorldFunction", {
 			runtime: lambda.Runtime.NODEJS_20_X, // Provide any supported Node.js runtime
 			handler: "app.lambdaHandler",
