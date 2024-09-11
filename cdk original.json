@@ -1,5 +1,5 @@
 {
-	"app": "bun bin/hello-cdk-typescript.ts",
+	"app": "npx ts-node --prefer-ts-exts bin/hello-cdk-typescript.ts",
 	"watch": {
 		"include": ["**"],
 		"exclude": [
