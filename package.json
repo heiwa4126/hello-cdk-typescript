@@ -1,6 +1,7 @@
 {
 	"name": "hello-cdk-typescript",
 	"version": "0.1.0",
+	"type": "module",
 	"bin": {
 		"hello-cdk-typescript": "bin/hello-cdk-typescript.js"
 	},
