@@ -8,12 +8,12 @@
 	"scripts": {
 		"format": "biome format --write . && dprint fmt && textlint --fix \"**/*.md\"",
 		"check": "biome check --write . && dprint check",
-		"bootstrap": ". ./.env && cdk bootstrap",
+		"bootstrap": "cdk bootstrap",
 		"list": "cdk list",
 		"synth": "cdk synth",
-		"deploy": ". ./.env && cdk deploy --all --require-approval never",
-		"diff": ". ./.env && cdk diff --all",
-		"destroy": ". ./.env && cdk destroy --all"
+		"deploy": "cdk deploy",
+		"diff": "cdk diff",
+		"destroy": "cdk destroy"
 	},
 	"devDependencies": {
 		"@types/node": "20.14.9",
