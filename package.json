@@ -1,28 +1,29 @@
 {
 	"name": "hello-cdk-typescript",
 	"version": "0.1.0",
-	"type": "module",
 	"bin": {
 		"hello-cdk-typescript": "bin/hello-cdk-typescript.js"
 	},
+	"type": "module",
 	"scripts": {
-		"format": "biome format --write . && dprint fmt && textlint --fix \"**/*.md\"",
-		"check": "biome check --write . && dprint check",
 		"bootstrap": "cdk bootstrap",
 		"list": "cdk list",
 		"synth": "cdk synth",
 		"deploy": "cdk deploy",
 		"diff": "cdk diff",
-		"destroy": "cdk destroy"
-	},
-	"devDependencies": {
-		"@types/node": "20.14.9",
-		"aws-cdk": "2.156.0",
-		"esbuild": "^0.24.0",
-		"tsx": "^4.19.2"
+		"destroy": "cdk destroy",
+		"format": "oxfmt",
+		"lint": "oxlint",
+		"check": "oxfmt && oxlint --fix"
 	},
 	"dependencies": {
-		"aws-cdk-lib": "2.156.0",
+		"aws-cdk-lib": "2.266.0",
 		"source-map-support": "^0.5.21"
+	},
+	"devDependencies": {
+		"@types/node": "26.2.0",
+		"aws-cdk": "2.1138.0",
+		"esbuild": "^0.28.2",
+		"tsx": "^4.23.12"
 	}
 }
