@@ -2,16 +2,11 @@
 	"name": "hello",
 	"version": "1.0.0",
 	"description": "hello world sample for NodeJS",
-	"main": "app.mjs",
-	"repository": "https://github.com/awslabs/aws-sam-cli/tree/develop/samcli/local/init/templates/cookiecutter-aws-sam-hello-nodejs",
-	"author": "SAM CLI",
 	"license": "MIT",
-	"dependencies": {},
-	"scripts": {
-		"test": "mocha tests/unit/"
-	},
-	"devDependencies": {
-		"chai": "^4.3.6",
-		"mocha": "^10.2.0"
+	"author": "SAM CLI",
+	"repository": "https://github.com/awslabs/aws-sam-cli/tree/develop/samcli/local/init/templates/cookiecutter-aws-sam-hello-nodejs",
+	"main": "app.mjs",
+	"dependencies": {
+		"date-fns": "^4.1.0"
 	}
 }

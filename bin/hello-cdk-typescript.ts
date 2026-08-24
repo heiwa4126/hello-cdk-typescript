@@ -2,7 +2,7 @@
 
 import * as cdk from "aws-cdk-lib";
 import "source-map-support/register";
-import { HelloCdkTypescriptStack } from "../lib/hello-cdk-typescript-stack.js";
+import { HelloCdkTypescriptStack } from "../lib/hello-cdk-typescript-stack";
 
 const app = new cdk.App();
 
